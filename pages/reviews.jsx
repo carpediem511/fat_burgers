@@ -5,12 +5,12 @@ const Reviews = ({ reviews }) => {
 	return (
 		<>
 			<Head>
-				<title>Жирные бургеры | Главная</title>
+				<title>Жирные бургеры | Отзывы</title>
 				<meta name="title" content="Жирные бургеры" />
 			</Head>
 
 			<div>
-				<h1>Отзывы клиентов</h1>
+				<h1 className="my-6 font-semibold text-xl">Отзывы клиентов</h1>
 				<div className="reviews">
 					{!!reviews.length && reviews.slice(0, 20).map(comment => {
 						return (
