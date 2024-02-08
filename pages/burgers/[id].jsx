@@ -1,6 +1,7 @@
 import styles from '../../styles/Burgers.module.css'
 import Image from "next/image"
-
+import dbData from '../../db.json'
+/*
 export const getStaticPaths = async () => {
 
 	const result = await fetch('http://localhost:5000/items')
@@ -16,9 +17,20 @@ export const getStaticPaths = async () => {
 		paths,
 		fallback: false
 	}
-}
+}*/
 
-export const getStaticProps = async (context) => {
+export const getStaticPaths = async () => {
+	const paths = dbData.items.map(burger => ({
+		params: { id: burger.id.toString() }
+	}));
+
+	return {
+		paths,
+		fallback: false
+	};
+};
+
+/*export const getStaticProps = async (context) => {
 
 	const id = context.params.id
 
@@ -28,7 +40,16 @@ export const getStaticProps = async (context) => {
 	return {
 		props: { burger: data }
 	}
-}
+}*/
+
+export const getStaticProps = async (context) => {
+	const id = context.params.id;
+	const burger = dbData.items.find(item => item.id === id);
+
+	return {
+		props: { burger }
+	};
+};
 
 const Details = ({ burger }) => {
 	return (
