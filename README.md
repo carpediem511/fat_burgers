@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### ОСНОВНАЯ ИДЕЯ
+Мой проект представляет собой мини-сайт, созданный с использованием технологии Next.js. Основная идея заключается в том, чтобы познакомиться с возможностями Next.js и разработать простой веб-сайт для представления бургеров и отзывов клиентов.
 
-## Getting Started
+### ОСНОВНЫЕ КОМПОНЕНТЫ ПРОЕКТА
+**Header: Компонент для отображения шапки сайта с логотипом и навигационными ссылками.
+**Burgers: Страница для отображения информации о бургерах, их названиях, изображениях и описаниях.
+**Reviews: Страница, на которой отображаются отзывы клиентов о бургерах.
 
-First, run the development server:
+### ИСПОЛЬЗУЕМЫЕ ТЕХНОЛОГИИ
+**Next.js: Фреймворк React для создания серверных рендеринговых приложений с простотой и эффективностью.
+**React: Библиотека JavaScript для создания пользовательских интерфейсов.
+**concurrently: Библиотека для запуска нескольких команд параллельно в терминале.
+**json-server: Инструмент для создания локального REST API на основе JSON-файла.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ОСОБЕННОСТИ ПРОЕКТА
+**Простоту и понятность кода благодаря использованию фреймворка Next.js.
+**Использование локального REST API для хранения данных о бургерах.
+**Запросы к внешнему API для получения отзывов клиентов.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ИНСТРУКЦИИ ПО УСТАНОВКЕ:
+Склонируйте репозиторий на вашем компьютере.
+Установите все зависимости, выполнив команду yarn install.
+Запустите приложение с помощью команды yarn start.
+Дата создания проекта: январь 2024 года.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Проект доступен онлайн по ссылке https://fat-burgers.netlify.app благодаря публикации на платформе Netlify.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Автор: Мальвина Милаш. Свяжитесь со мной по электронной почте vampire05@yandex.ru для вопросов и предложений.
